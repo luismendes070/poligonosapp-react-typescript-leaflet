@@ -2,7 +2,7 @@ import React = require('react');
 import { MapContainer, TileLayer, Polygon, Popup } from 'react-leaflet';
 import { useQuery } from 'react-query';
 
-function MapWithData() {
+export function MapWithData() {
   const { isLoading, error, data } = useQuery('mapData', fetchMapData);
 
   if (isLoading) return 'Loading...';
